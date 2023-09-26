@@ -1,24 +1,19 @@
-const rateStar = document.querySelector(".rateStar");
-const cardMovie = document.querySelectorAll(".cardMovie");
-
-// bug detected
-
-// 1 - card without cover
-// 2 - card does not receive click
-
 function eventManager() {
+  const rateStar = document.querySelector(".rateStar");
+  const cardMovies = document.querySelectorAll(".cardMovie");
+
   rateStar.addEventListener("click", () => {
     rateStar.classList.remove("fa-regular");
     rateStar.classList.add("fa-solid");
   });
 
-  cardMovie.forEach((card) => {
+  cardMovies.forEach((card) => {
     card.addEventListener("click", () => {
       console.log("Card clicado");
-      cardMovie.forEach((c) => {
+      cardMovies.forEach((c) => {
         c.style.transform = "scale(1)";
       });
-      card.style.transform = "scale(1.3)";
+      card.style.transform = "scale(1.2)";
     });
   });
 }
