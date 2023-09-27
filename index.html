@@ -18,6 +18,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- Required Core Stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+<!-- Optional Theme Stylesheet -->
+<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
@@ -103,11 +108,22 @@
       </section>
       <section class="mx-5 mt-5">
         <div class="h4 mb-3">Popular Movies</div>
-        <div class="row bg-secondary popularMovieRow bg-opacity-50 align-items-center" id="sectionPopularMovies">
-          
+        <div class="row bg-secondary popularMovieRow bg-opacity-50 " >
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides align-items-center"id="sectionPopularMovies">
+                
+               
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    
+    
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
